@@ -3,6 +3,7 @@ const navList = document.querySelector(".nav-list");
 const videoContainer = document.querySelector(".video-container");
 const navbar = document.querySelector("nav");
 const navLinks = document.querySelectorAll(".nav-list a");
+const serviceTpyes = document.querySelector(".service-types");
 toggleBtn.addEventListener("click", () => {
   navList.classList.toggle("show-nav-list");
 });
@@ -22,7 +23,6 @@ navList.addEventListener("click", (e) => {
       e.target.textContent === "contact") &&
     document.title === "Homodeus Fitness"
   ) {
-    // console.log(e.target.href);
     e.preventDefault();
     const section = document.getElementById(e.target.textContent);
     if (window.innerWidth < "950") {

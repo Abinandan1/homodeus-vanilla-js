@@ -82,7 +82,7 @@ body {
 
 p {
   margin-bottom: 1rem;
-  max-width: 40em;
+  /* max-width: 40em; */
 }
 
 h1,
@@ -738,12 +738,7 @@ HEADER
   /* position: relative; */
 }
 .services-section {
-  /* position: relative; */
-  /* top: 10rem; */
-  /* width: 100%; */
-  display: flex;
-  height: 100%;
-  justify-content: center;
+  margin-bottom: 8rem;
 }
 .services-content {
   color: var(--white);
@@ -766,17 +761,104 @@ HEADER
   flex-wrap: wrap;
   justify-content: center;
   gap: 2rem;
+  margin-bottom: 2rem;
 }
 .service-type {
   display: flex;
   flex-direction: column;
-  background: var(--white);
+  background: var(--grey-100);
   color: var(--grey-500);
   border-radius: var(--borderRadius);
+  transition: var(--transition);
+}
+.service-type:hover {
+  transform: scale(1.05);
 }
 .service-img {
-  width: 250px;
+  width: auto;
   height: 200px;
   border-top-left-radius: var(--borderRadius);
   border-top-right-radius: var(--borderRadius);
+}
+.service-type .btn {
+  align-self: center;
+  margin-bottom: 1.5rem;
+  font-size: 0.8rem;
+}
+.service-description {
+  padding-top: 1rem;
+}
+.service-name {
+  color: var(--black);
+  font-size: 1.5rem;
+}
+.service-timing {
+  font-size: 0.9rem;
+}
+.service-cost {
+}
+@media screen and (min-width: 768px) {
+  .service-types {
+    gap: 2rem 3rem;
+  }
+  .service-type {
+    flex-basis: 280px;
+  }
+}
+@media screen and (min-width: 1000px) {
+  .service-types {
+    gap: 3rem 4rem;
+  }
+  .service-type {
+    flex-basis: 300px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .service-types {
+    gap: 4rem 7rem;
+  }
+  .service-type {
+    flex-basis: 320px;
+  }
+}
+
+.subscription-section {
+  text-align: center;
+  padding-bottom: 2rem;
+}
+.subscription-heading {
+  margin-bottom: 4rem;
+}
+.subscription-content {
+  color: var(--white);
+}
+.subscription-types {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+}
+.subscription-type {
+  border: 3px solid var(--white);
+  text-align: center;
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.subscription-top {
+  border-bottom: 3px solid var(--white);
+  padding: 1.5rem;
+}
+.subscription-name {
+  font-size: 2rem;
+}
+.subscription-cost {
+  font-size: 3rem;
+}
+.subscription-description {
+  /* max-width: 200px; */
+}
+.subscription-bottom {
+  padding: 1.5rem;
 }
